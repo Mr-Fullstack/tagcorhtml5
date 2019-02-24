@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title> tag cor</title>
+
+
+</head>
+
+<body id="teste"  >
+
+<label for="cor">Cor</label>
+<input id="cor" type="color" name="cor" onchange ="mudarBackground()">
+</body>
+	<script type="text/javascript">
+		
+function mudarBackground(){ 
+
+const mudarcor = document.getElementById("cor");
+const background= document.getElementById("teste").style.backgroundColor=mudarcor.value;
+ 
+ console.log(' cor que selecionada no input color '+ mudarcor.value);
+ console.log(' cor que foi aplicada no body '+ background);
+
+}
+
+ </script>
+
+
+</html>
